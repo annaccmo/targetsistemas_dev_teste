@@ -1,5 +1,10 @@
-dados = [{"dia": 1, "valor": 22174.1664},{"dia": 2, "valor": 24537.6698},{"dia": 3, "valor": 26139.6134}, {"dia": 4, "valor": 0.0}]
+#dados = [{"dia": 1, "valor": 22174.1664},{"dia": 2, "valor": 24537.6698},{"dia": 3, "valor": 26139.6134}, {"dia": 4, "valor": 0.0}]
 
+import json
+
+with open('dados.json') as f:
+  dados = json.load(f)
+  
 valores = []
 total = 0
 for d in dados:
